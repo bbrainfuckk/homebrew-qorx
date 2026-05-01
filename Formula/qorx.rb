@@ -2,8 +2,8 @@ class Qorx < Formula
   desc "Language and runtime for local context resolution"
   homepage "https://github.com/bbrainfuckk/qorx"
   url "https://github.com/bbrainfuckk/qorx.git",
-      tag:      "v1.0.1",
-      revision: "6391ff29201670fab5a55d53ab0245ddbc3f892e"
+      tag:      "v1.0.2",
+      revision: "86b7a40ba7f5bafa67cd3a15367fc35c0cc6d760"
   license "AGPL-3.0-only"
 
   depends_on "rust" => :build
@@ -13,6 +13,6 @@ class Qorx < Formula
   end
 
   test do
-    assert_match "qorx 1.0.1", shell_output("#{bin}/qorx --version")
+    assert_match "qorx 1.0.2", shell_output("#{bin}/qorx --version")
   end
 end
